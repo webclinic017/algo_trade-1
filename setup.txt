@@ -1,0 +1,33 @@
+Setup:
+Google cloud: one node + 10 GB free
+Interactive Brokers account + API
+
+To access the virtual machine I need to add your ssh key
+
+Twitter account:
+UIAE
+
+API Key:
+BYCrKwYk3oFI6r5g3x8mVKTcH
+
+Consumer Secret:
+cpBLW4tqXNGZM43Vpar3H4bUJUIvMEep4NCiulL1oR7rJYVCAQ
+
+name:
+UiaeUiae1
+
+ID:
+853595508366991360
+
+Access Token:
+853595508366991360-joDmbKrcJbHAtiGNHPkj4G7yLqVWVFU
+
+Secret:
+vknEzPskeXBMxQhGnSnbaawnn329h0aDM7rEGI1n6TaFx
+
+
+Login:
+uiae
+
+Pass:
+uiaeuiae
