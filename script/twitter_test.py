@@ -1,8 +1,8 @@
 #Import the necessary methods from tweepy library
 import tweepy
-import textblob 
+import textblob
 
-#Variables that contains the user credentials to access Twitter API 
+#Variables that contains the user credentials to access Twitter API
 access_token = "853595508366991360-joDmbKrcJbHAtiGNHPkj4G7yLqVWVFU"
 access_token_secret = "vknEzPskeXBMxQhGnSnbaawnn329h0aDM7rEGI1n6TaFx"
 consumer_key = "BYCrKwYk3oFI6r5g3x8mVKTcH"
@@ -44,3 +44,5 @@ if __name__ == '__main__':
     #find a lot of drama queens and see when major consent is negative about a certain brand
     #idea: compare week average to day average if change is large act on it
     stream.filter(track=["trump", "donald trump"])
+
+    print 'Donald Trump is gonna make us rich'
