@@ -45,4 +45,4 @@ if __name__ == '__main__':
     #idea: compare week average to day average if change is large act on it
     stream.filter(track=["trump", "donald trump"])
 
-    print 'Donald Trump is gonna make us rich'
+    print 'Donald Trump is gonna make us very rich'
