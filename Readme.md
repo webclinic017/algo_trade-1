@@ -10,10 +10,10 @@ The programs will run in python 2.7 because the IBridgePy only supports old pyth
 Furthermore two libraries are needed. 'TextBlob' for sentiment analysis and 'tweepy' for the twitter API.
 
 ## Progress
-So far I wrote a script that processes tweets filtered by keywords and analysis the positivity of them. the most radical ones are printed to the screen.
+So far I wrote a script that processes tweets filtered by keywords and analyses the positivity of them. the most radical ones are printed to the screen.
 
 ## Goal
-The best thing would be to find those scenarios like the recent united incident.
+The best thing would be to find scenarios such as the recent united incident.
 One could for example keep track of the popular opinion of all listed US companies and take a weekly average, and compare this average to the current day average. Large discrepancies might be an indicator for some event.
 
 ## Further reading

@@ -11,16 +11,18 @@
 # CAREFUL IT IS NOT YET A WORKING EXAMPLE
 
 #Import the necessary methods from tweepy library
-#from IBridgePy.MarketManagerBase import MarketManager
-#from IBridgePy.Trader_single_account import Trader
-#from IBridgePy.quantopian import LimitOrder, StopOrder
 
 
-import Queue # Nice this is already thread safe no need to worry about race condition
+import Queue # Nice! this is already thread safe no need to worry about race condition
 import threading
 import time
 import signal
 import random
+
+from IBridgePy.MarketManagerBase import MarketManager
+from IBridgePy.Trader_single_account import Trader
+from IBridgePy.quantopian import LimitOrder, StopOrder
+
 
 class TwitterThread(threading.Thread):
     def __init__(self, buf, group=None, target=None, name=None,args=(), kwargs=None, verbose=None):
