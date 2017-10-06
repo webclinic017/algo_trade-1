@@ -2,15 +2,18 @@
 
 ## Folders
 Here is a short explanation of the folders:
-* IBridgePy: This is a third party (but officially supported) interface to InterativeBrokers. It is the only reasonable python API I found for any broker.
+* IB_source: The official Phython API has been released for Interactive brokers. I played around a bit and it seems to support everything.
 * script: Folder for our programs.
+* data: This folder contains additional data like stock names for companies.
 
 ## Prerequisites
-The programs will run in python 2.7 because the IBridgePy only supports old python :(.
+The programs will run in python 3.5.
 Furthermore two libraries are needed. 'TextBlob' for sentiment analysis and 'tweepy' for the twitter API.
+Several parallelization libraries are needed as well, since we will make extensive use of the python Queue library.
 
 ## Progress
 So far I wrote a script that processes tweets filtered by keywords and analyses the positivity of them. the most radical ones are printed to the screen.
+I also implemented a script that connects to the Interactive Broker server.
 
 ## Goal
 The best thing would be to find scenarios such as the recent united incident.
@@ -18,6 +21,6 @@ One could for example keep track of the popular opinion of all listed US compani
 
 ## Further reading
 * Interactive Brokers: https://www.interactivebrokers.com/en/home.php
-* IBridgePy API: http://www.ibridgepy.com/
-* Video Tutorial zu IBridgePy: https://youtu.be/Cg3gejGX3Xk
-* Tutorial that covered everything I programmed so far: https://www.dataquest.io/blog/streaming-data-python/
+* Interactive Broker API: http://interactivebrokers.github.io/tws-api/introduction.html#gsc.tab=0
+* Tutorial for IB API: https://qoppac.blogspot.ch/2017/03/interactive-brokers-native-python-api.html
+* Tutorial to Twitter: https://www.dataquest.io/blog/streaming-data-python/

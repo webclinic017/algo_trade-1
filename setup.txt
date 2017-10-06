@@ -1,8 +1,6 @@
-Setup:
-Google cloud: one node + 10 GB free
-Interactive Brokers account + API
+Currently everything is a local implementation. But a Cloud solution is easy using for example the Google cloud.
 
-To access the virtual machine I need to add your ssh key
+To connect to the TWS application, it has to be configured properly. See tutorial mentioned in Readme.
 
 Twitter account:
 UIAE
@@ -24,7 +22,6 @@ Access Token:
 
 Secret:
 vknEzPskeXBMxQhGnSnbaawnn329h0aDM7rEGI1n6TaFx
-
 
 Login:
 uiae
