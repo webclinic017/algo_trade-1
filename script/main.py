@@ -27,10 +27,10 @@ import Broker
 
 # SETTINGS: PROVIDE ACCESS TOKEN TO TWITTER AND BROKER APIs
 # Twitter:
-access_token = "853595508366991360-joDmbKrcJbHAtiGNHPkj4G7yLqVWVFU"
-access_token_secret = "vknEzPskeXBMxQhGnSnbaawnn329h0aDM7rEGI1n6TaFx"
-consumer_key = "BYCrKwYk3oFI6r5g3x8mVKTcH"
-consumer_secret = "cpBLW4tqXNGZM43Vpar3H4bUJUIvMEep4NCiulL1oR7rJYVCAQ"
+access_token = '853595508366991360-joDmbKrcJbHAtiGNHPkj4G7yLqVWVFU'
+access_token_secret = 'vknEzPskeXBMxQhGnSnbaawnn329h0aDM7rEGI1n6TaFx'
+consumer_key = 'BYCrKwYk3oFI6r5g3x8mVKTcH'
+consumer_secret = 'cpBLW4tqXNGZM43Vpar3H4bUJUIvMEep4NCiulL1oR7rJYVCAQ'
 #
 
 #
@@ -39,7 +39,7 @@ consumer_secret = "cpBLW4tqXNGZM43Vpar3H4bUJUIvMEep4NCiulL1oR7rJYVCAQ"
 #size of the producer/consumer buffer
 
 buffersize = 10
-q = Queue.Queue(buffersize)
+q = queue.Queue(buffersize)
 
 
 # setup twitter and threading objects
@@ -57,7 +57,6 @@ def handler(signum, frame):
     raise ServiceExit
 
 def main():
-
     #signals!!!
     signal.signal(signal.SIGTERM, handler)
     signal.signal(signal.SIGTERM, handler)
@@ -71,7 +70,7 @@ def main():
 
     except:
         twitter.shutdown()
-        trading.shutdown_flag.set()
+        trading.shutdown()
         twitter.join()
         trading.join()
 

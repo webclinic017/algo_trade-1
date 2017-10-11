@@ -2,7 +2,7 @@
 import tweepy
 import textblob
 
-import Queue
+import queue
 import threading
 import time
 import signal
@@ -60,7 +60,7 @@ class TwitterThread(threading.Thread):
 
         #find a lot of drama queens and see when major consent is negative about a certain brand
         #idea: compare week average to day average if change is large act on it
-        self.stream.filter(track=["google"])
+        self.stream.filter(track=['google'])
 
         print("Twitter shutdown")
 
